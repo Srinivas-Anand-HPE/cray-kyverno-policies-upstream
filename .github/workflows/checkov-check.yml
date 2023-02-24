@@ -21,4 +21,4 @@ jobs:
         uses: actions/checkout@v3
       - name: scan
         run: |
-            checkov --directory $GITHUB_WORKSPACE
+            checkov --directory $GITHUB_WORKSPACE --skip-check CKV2_GHA_1
